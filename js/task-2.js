@@ -6,12 +6,12 @@
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
 function makeArray(firstArray, secondArray, maxLength) {
-  let nextArray = firstArray.slice();
-  nextArray.concat(secondArray);
-  if (nextArray > maxLength) {
-    return nextArray.slice(0, maxLength);
+  let resultArray = firstArray.slice();
+  resultArray = resultArray.concat(secondArray);
+  if (resultArray.length > maxLength) {
+    return resultArray.slice(0, maxLength);
   } else {
-    return nextArray;
+    return resultArray;
   }
 }
 console.log(makeArray(['Mango', 'Poly'], ['Ajax', 'Chelsea'], 3)); // ["Mango", "Poly", "Ajax"]
